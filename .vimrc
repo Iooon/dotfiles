@@ -17,6 +17,9 @@ set noswapfile
 " Command history
 set history=100
 
+" UTF encoding
+set encoding=utf-8
+
 " Always show cursor
 set ruler
 
@@ -76,9 +79,6 @@ set statusline=%f\ %=L:%l/%L\ %c\ (%p%%)
 " Hide the toolbar
 set guioptions-=T
 
-" UTF encoding
-set encoding=utf-8
-
 " Autoload files that have changed outside of vim
 set autoread
 
@@ -113,8 +113,8 @@ let g:netrw_liststyle=3
 
 " Always highlight column 80 so it's easier to see where
 " cutoff appears on longer screens
-autocmd BufWinEnter * highlight ColorColumn ctermbg=darkred
-set colorcolumn=80
+"autocmd BufWinEnter * highlight ColorColumn ctermbg=darkred
+"set colorcolumn=80
 " }}}
 
 " Plugins {{{
