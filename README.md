@@ -16,3 +16,4 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
 ```
 
 Then run :PackerSync or nvim +PackerSync
+Check language servers with: :Mason
