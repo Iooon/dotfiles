@@ -1,7 +1,7 @@
 # Config file targets
 - bash
 - vim
-- nvim
+- nvim (v0.5+)
 - tmux
 
 # General
