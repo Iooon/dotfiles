@@ -15,7 +15,7 @@ vim.o.breakindent = true
 -- Save undo history
 vim.opt.swapfile = false
 vim.opt.backup = false
-vim.opt.undodir = '.cache/nvim/undodir'
+vim.opt.undodir = '.cache/crispaudio/.config/undodir'
 vim.o.undofile = true
 
 -- Case insensitive searching UNLESS /C or capital in search
