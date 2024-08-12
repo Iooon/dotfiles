@@ -15,7 +15,7 @@ vim.o.breakindent = true
 -- Save undo history
 vim.opt.swapfile = false
 vim.opt.backup = false
-vim.opt.undodir = '.cache/nvim/undodir'
+vim.opt.undodir = vim.loop.os_homedir() .. '/.cache/nvim/undodir/'
 vim.o.undofile = true
 
 -- Case insensitive searching UNLESS /C or capital in search
@@ -28,6 +28,7 @@ vim.o.updatetime = 250
 vim.wo.signcolumn = 'yes'
 
 -- Set colorscheme
+vim.o.background = 'dark'
 vim.o.termguicolors = true
 
 -- Set completeopt to have a better completion experience
