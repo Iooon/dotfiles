@@ -38,6 +38,9 @@ return {
         { '<leader>ws', function() require('telescope.builtin').lsp_dynamic_workspace_symbols() end,
             { desc = '[W]orkspace [S]ymbols' }
         },
+        { '<leader>=', function() vim.lsp.buf.format() end,
+            { desc = 'Format current file' }
+        },
         -- See `:help K` for why this keymap
         { 'K', function() vim.lsp.buf.hover() end,
             { desc = 'Hover Documentation' }

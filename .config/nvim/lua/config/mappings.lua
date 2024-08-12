@@ -31,7 +31,6 @@ vim.keymap.set({"n", "v"}, "<leader>y", [["+y]], { desc = "Yank line to clipboar
 vim.keymap.set("n", "<leader>Y", [["+Y]], { desc = "Yank line to clipboard if access" })
 
 vim.keymap.set("n", "Q", "<nop>")
-vim.keymap.set("n", "<leader>=", vim.lsp.buf.format, { desc = "Format current file" })
 -- vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww tmux-sessionizer<CR>")
 
 vim.keymap.set("n", "<leader>j", "<cmd>cnext<CR>zz", { desc = "Forward qfixlist" })
