@@ -39,13 +39,19 @@ return {
             desc = '[f] Fuzzily search in files]'
         },
     },
-    opts = {
-        defaults={mappings={i={
-            ['<C-h>'] = 'which_key',
-            ['<C-j>'] = require('telescope.actions').move_selection_next,
-            ['<C-k>'] = require('telescope.actions').move_selection_previous,
-            ['<C-u>'] = false,
-            ['<C-d>'] = false,
-        }}}
-    }
+    config = function()
+        -- Do an initial setup to load telescope actions for mappings
+        if not package.loaded['telescope.actions'] then
+            require('telescope').setup({})
+        end
+        require('telescope').setup({
+            defaults={mappings={i={
+                ['<C-h>'] = 'which_key',
+                ['<C-j>'] = require('telescope.actions').move_selection_next,
+                ['<C-k>'] = require('telescope.actions').move_selection_previous,
+                ['<C-u>'] = false,
+                ['<C-d>'] = false,
+            }}}
+        })
+    end,
 }
