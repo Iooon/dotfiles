@@ -98,26 +98,6 @@ return {
                     capabilities = capabilities,
                 })
             end,
-            ['lua_ls'] = function()
-                nvim_lsp['lua_ls'].setup({
-                    capabilities = capabilities,
-                })
-            end,
-            ['clangd'] = function()
-                nvim_lsp['clangd'].setup({
-                    capabilities = capabilities,
-                })
-            end,
-            ['rust_analyzer'] = function()
-                nvim_lsp['rust_analyzer'].setup({
-                    capabilities = capabilities,
-                })
-            end,
-            ['pyright'] = function()
-                nvim_lsp['pyright'].setup({
-                    capabilities = capabilities,
-                })
-            end,
         })
     end,
 }
